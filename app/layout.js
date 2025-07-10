@@ -14,23 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider
-    // appearance={{
-    //   baseTheme: shadesOfPurple,
-    //   variables: {
-    //     colorPrimary: "#3b82f6",
-    //     colorBackground: "#1a202c",
-    //     colorInputBackground: "#2D3748",
-    //     colorInputText: "#F3F4F6",
-    //   },
-    //   elements: {
-    //     formButtonPrimary: "bg-purple-600 hover:bg-purple-700 text-white",
-    //     card: "bg-gray-800",
-    //     headerTitle: "text-blue-400",
-    //     headerSubtitle: "text-gray-400",
-    //   },
-    // }}
-    >
+    <ClerkProvider>
       <html lang="en">
         <body
           className={`${inter.className} bg-gradient-to-b from-orange-50 via-amber-50 to-orange-50`}
@@ -39,8 +23,6 @@ export default function RootLayout({ children }) {
           <Header />
           <main className="min-h-screen">{children}</main>
           <Toaster richColors />
-
-          <footer className="bg-orange-300 py-12 bg-opacity-10">
             <div className="container mx-auto px-4 text-center text-gray-900">
             </div>
           </footer>
